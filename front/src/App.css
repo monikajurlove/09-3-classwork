@@ -1,0 +1,194 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a9d8f;
+    color: white;
+    padding: 12px 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.toolbar h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toolbar-right h3 {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Buttons */
+button {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.btn-reserve {
+    background: #264653;
+    color: white;
+}
+
+.btn-delete {
+    background: #e63946;
+    color: white;
+}
+
+.btn-remove {
+    background: #f4a261;
+    color: white;
+}
+
+.btn-disabled {
+    background: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* Item card */
+.item-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-card img {
+    max-width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.item-card h3 {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item-card p {
+    margin: 4px 0;
+}
+
+/* Messages inside cards */
+.item-card .status {
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.status-owner {
+    color: #2a9d8f;
+}
+
+.status-reserved {
+    color: #e76f51;
+}
+
+.status-info {
+    color: #555;
+}
+
+/* Forms */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin: 10px;
+    flex: 1;
+    max-width: 350px;
+}
+
+.box input,
+.box button {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box; /* užtikrina vienodą plotį */
+}
+
+.box button {
+    background: #2a9d8f;
+    color: white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.box button:hover {
+    background: #21867a;
+}
+
+/* Reserved items total */
+.total-box {
+    grid-column: 1 / -1;
+    margin-top: 20px;
+    padding: 16px;
+    background: #264653;
+    color: white;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.p20{
+    padding: 20px;
+}
+
+.reserve{
+    margin-top: 20px;
+    background: #6d956d;
+    color: white;
+}
